@@ -1,0 +1,115 @@
+
+PRINCIPAL MEMBER
+Kifaru - XLOOKUP(G33,'Family Shield'!A5:A52,XLOOKUP(G31,'Family Shield'!B4:G4,'Family Shield'!B5:G52))
+
+Chui - XLOOKUP(G33,'Family Shield'!J5:J52,XLOOKUP(G31,'Family Shield'!K4:P4,'Family Shield'!K5:P52))
+
+Nyati - XLOOKUP(G31,'Family Shield'!T4:Y4,XLOOKUP(G33,'Family Shield'!S5:S52,'Family Shield'!T5:Y52))
+
+Ndovu - XLOOKUP(G31,'Family Shield'!AC4:AH4,XLOOKUP(G33,'Family Shield'!AB5:AB52,'Family Shield'!AC5:AH52))
+
+Simba - XLOOKUP(G33,'Family Shield'!AK5:AK52,XLOOKUP(G31,'Family Shield'!AL4:AQ4,'Family Shield'!AL5:AQ52))
+
+
+
+
+SPOUSE
+Kifaru - XLOOKUP(G39,'Family Shield'!A58:A105,XLOOKUP(G37,'Family Shield'!B57:G57,'Family Shield'!B58:G105))
+
+Chui - XLOOKUP(G37,'Family Shield'!K57:P57,XLOOKUP(G39,'Family Shield'!J58:J105,'Family Shield'!K58:P105))
+
+Nyati - XLOOKUP(G39,'Family Shield'!S58:S105,XLOOKUP(G37,'Family Shield'!T57:Y57,'Family Shield'!T58:Y105))
+
+Ndovu - XLOOKUP(G39,'Family Shield'!AB58:AB105,XLOOKUP(G37,'Family Shield'!AC57:AH57,'Family Shield'!AC58:AH105))
+
+Simba - XLOOKUP(G39,'Family Shield'!AK58:AK105,XLOOKUP(G37,'Family Shield'!AL57:AQ57,'Family Shield'!AL58:AQ105))
+
+
+CHILDREN
+Kifaru - XLOOKUP(G46,'Family Shield'!A113:A160,XLOOKUP(G43,'Family Shield'!B112:G112,'Family Shield'!B113:G160))*G44
+
+Chui - XLOOKUP(G46,'Family Shield'!J113:J160,XLOOKUP(G43,'Family Shield'!K112:P112,'Family Shield'!K113:P160))*G44
+
+Nyati - XLOOKUP(G46,'Family Shield'!S113:S160,XLOOKUP(G43,'Family Shield'!T112:Y112,'Family Shield'!T113:Y160))*G44
+
+Ndovu - XLOOKUP(G46,'Family Shield'!AB113:AB160,XLOOKUP(G43,'Family Shield'!AC112:AH112,'Family Shield'!AC113:AH160))*G44
+
+Simba - XLOOKUP(G46,'Family Shield'!AK113:AK160,XLOOKUP(G43,'Family Shield'!AL112:AQ112,'Family Shield'!AL113:AQ160))*G44
+
+
+
+
+
+PARENTS
+parent 1
+
+Kifaru - XLOOKUP(G52,'Family Shield'!A169:A219,XLOOKUP(G50,'Family Shield'!B168:G168,'Family Shield'!B169:G219))
+
+Chui - XLOOKUP(G52,'Family Shield'!J169:J219,XLOOKUP(G50,'Family Shield'!K168:P168,'Family Shield'!K169:P219))
+
+Nyati - XLOOKUP(G52,'Family Shield'!S169:S219,XLOOKUP(G50,'Family Shield'!T168:Y168,'Family Shield'!T169:Y219))
+
+Ndovu - XLOOKUP(G52,'Family Shield'!AB169:AB219,XLOOKUP(G50,'Family Shield'!AC168:AH168,'Family Shield'!AC169:AH219))
+
+Simba - XLOOKUP(G52,'Family Shield'!AK169:AK219,XLOOKUP(G50,'Family Shield'!AL168:AQ168,'Family Shield'!AL169:AQ219))
+
+
+
+
+Parent 2
+
+Kifaru - XLOOKUP(G58,'Family Shield'!A169:A219,XLOOKUP(G56,'Family Shield'!B168:G168,'Family Shield'!B169:G219))
+
+Chui - XLOOKUP(G58,'Family Shield'!J169:J219,XLOOKUP(G56,'Family Shield'!K168:P168,'Family Shield'!K169:P219))
+
+Nyati - XLOOKUP(G58,'Family Shield'!S169:S219,XLOOKUP(G56,'Family Shield'!T168:Y168,'Family Shield'!T169:Y219))
+
+Ndovu - XLOOKUP(G58,'Family Shield'!AB169:AB219,XLOOKUP(G56,'Family Shield'!AC168:AH168,'Family Shield'!AC169:AH219))
+
+Simba - XLOOKUP(G58,'Family Shield'!AK169:AK219,XLOOKUP(G56,'Family Shield'!AL168:AQ168,'Family Shield'!AL169:AQ219))
+
+
+
+
+Parent 3
+
+Kifaru - XLOOKUP(G64,'Family Shield'!A169:A219,XLOOKUP(G62,'Family Shield'!B168:G168,'Family Shield'!B169:G219))
+
+Chui - XLOOKUP(G64,'Family Shield'!J169:J219,XLOOKUP(G62,'Family Shield'!K168:P168,'Family Shield'!K169:P219))
+
+Nyati - XLOOKUP(G64,'Family Shield'!S169:S219,XLOOKUP(G62,'Family Shield'!T168:Y168,'Family Shield'!T169:Y219))
+
+Ndovu - XLOOKUP(G64,'Family Shield'!AB169:AB219,XLOOKUP(G62,'Family Shield'!AC168:AH168,'Family Shield'!AC169:AH219))
+
+Simba - XLOOKUP(G64,'Family Shield'!AK169:AK219,XLOOKUP(G62,'Family Shield'!AL168:AQ168,'Family Shield'!AL169:AQ219))
+
+
+=IF(G67 = 50000, XLOOKUP(G70,'Family Shield'!A169:A219,XLOOKUP(G68,'Family Shield'!B168:G168,'Family Shield'!B169:G219)),
+    IF(G67 = 100000, XLOOKUP(G70,'Family Shield'!J169:J219,XLOOKUP(G68,'Family Shield'!K168:P168,'Family Shield'!K169:P219)),
+        IF(G67 = 150000, XLOOKUP(G70,'Family Shield'!S169:S219,XLOOKUP(G68,'Family Shield'!T168:Y168,'Family Shield'!T169:Y219)),
+            IF(G67 = 200000, XLOOKUP(G70,'Family Shield'!AB169:AB219,XLOOKUP(G68,'Family Shield'!AC168:AH168,'Family Shield'!AC169:AH219)),
+                IF(G67 = 250000, XLOOKUP(G70,'Family Shield'!AK169:AK219,XLOOKUP(G68,'Family Shield'!AL168:AQ168,'Family Shield'!AL169:AQ219)),
+                    0
+                )
+            )
+        )
+    )
+)
+
+
+Parent 4
+
+Kifaru - XLOOKUP(G70,'Family Shield'!A169:A219,XLOOKUP(G68,'Family Shield'!B168:G168,'Family Shield'!B169:G219))
+
+Chui - XLOOKUP(G70,'Family Shield'!J169:J219,XLOOKUP(G68,'Family Shield'!K168:P168,'Family Shield'!K169:P219))
+
+Nyati - XLOOKUP(G70,'Family Shield'!S169:S219,XLOOKUP(G68,'Family Shield'!T168:Y168,'Family Shield'!T169:Y219))
+
+Ndovu - XLOOKUP(G70,'Family Shield'!AB169:AB219,XLOOKUP(G68,'Family Shield'!AC168:AH168,'Family Shield'!AC169:AH219))
+
+Simba - XLOOKUP(G70,'Family Shield'!AK169:AK219,XLOOKUP(G68,'Family Shield'!AL168:AQ168,'Family Shield'!AL169:AQ219))
+
+
+
+
+
